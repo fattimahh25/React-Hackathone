@@ -12,7 +12,9 @@ function ProductDetailModal({ product, onClose }) {
         padding: '20px',
         width: '400px',
         borderRadius: '10px',
-        position: 'relative'
+        position: 'relative',
+        marginTop: '80px',
+        boxShadow: '0 4px 8px rgba(0, 0,0, 0.2)',
       }}>
         <button onClick={onClose} style={{ position: 'absolute', top: 10, right: 10 }}>X</button>
         <img src={product.image} alt={product.title} style={{ width: '100%', height: '200px', objectFit: 'contain' }} />
