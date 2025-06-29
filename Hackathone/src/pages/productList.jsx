@@ -8,7 +8,7 @@ function ProductList() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
-    axios.get('https://dummyjson.com/posts/tag-list') // Fake product API
+    axios.get('https://fakestoreapi.com/products') // Fake product API
       .then(res => setProducts(res.data))
       .catch(err => console.error(err));
   }, []);
